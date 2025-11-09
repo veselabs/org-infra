@@ -16,14 +16,11 @@ module "github_repositories" {
   source = "./modules/github-repository"
 
   for_each = {
-    ansible-homelab     = { visibility = "private" }
-    issues              = { has_issues = true }
-    issues-private      = { has_issues = true, visibility = "private" }
-    packer-homelab      = { visibility = "private" }
-    terraform-aws       = { visibility = "private" }
-    terraform-bootstrap = {}
-    terraform-github    = {}
-    terraform-homelab   = { visibility = "private" }
+    ansible-homelab   = { visibility = "private" }
+    issues            = { has_issues = true }
+    issues-private    = { has_issues = true, visibility = "private" }
+    packer-homelab    = { visibility = "private" }
+    terraform-homelab = { visibility = "private" }
 
     bootstrap-infrastructure    = { visibility = "private" }
     organization-infrastructure = { visibility = "private" }
