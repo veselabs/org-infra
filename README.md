@@ -36,6 +36,7 @@
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_op_service_account_token"></a> [op\_service\_account\_token](#input\_op\_service\_account\_token) | n/a | `string` | n/a | yes |
+| <a name="input_op_vault"></a> [op\_vault](#input\_op\_vault) | tflint-ignore: terraform\_unused\_declarations | `string` | n/a | yes |
 
 ## Outputs
 
