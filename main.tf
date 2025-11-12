@@ -7,11 +7,11 @@ module "github_repositories" {
   source = "./modules/github-repository"
 
   for_each = {
-    bootstrap-infrastructure    = { visibility = "private" }
-    homelab-infrastructure      = { visibility = "private" }
-    issues                      = { has_issues = true }
-    issues-private              = { has_issues = true, visibility = "private" }
-    organization-infrastructure = { visibility = "private" }
+    bootstrap-infra = { visibility = "private" }
+    homelab-infra   = { visibility = "private" }
+    issues          = { has_issues = true }
+    issues-private  = { has_issues = true, visibility = "private" }
+    org-infra       = { visibility = "private" }
   }
 
   name           = each.key
