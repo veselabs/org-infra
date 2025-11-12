@@ -7,6 +7,11 @@ terraform {
       version = "~> 6.0"
     }
 
+    onepassword = {
+      source  = "1Password/onepassword"
+      version = "2.2.0"
+    }
+
     tailscale = {
       source  = "tailscale/tailscale"
       version = "0.24.0"

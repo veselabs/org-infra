@@ -8,6 +8,7 @@
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.12 |
 | <a name="requirement_github"></a> [github](#requirement\_github) | ~> 6.0 |
+| <a name="requirement_onepassword"></a> [onepassword](#requirement\_onepassword) | 2.2.0 |
 | <a name="requirement_tailscale"></a> [tailscale](#requirement\_tailscale) | 0.24.0 |
 
 ## Providers
@@ -32,7 +33,9 @@
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_op_service_account_token"></a> [op\_service\_account\_token](#input\_op\_service\_account\_token) | n/a | `string` | n/a | yes |
 
 ## Outputs
 

@@ -3,6 +3,16 @@ provider "github" {
   app_auth {}
 }
 
+provider "onepassword" {
+  service_account_token = var.op_service_account_token
+}
+
+variable "op_service_account_token" {
+  type      = string
+  ephemeral = true
+  sensitive = true
+}
+
 locals {
   default_branch = "master"
 }

@@ -42,6 +42,7 @@
                 GITHUB_APP_PEM_FILE = "op://veselabs/github app private key/private key";
                 TAILSCALE_OAUTH_CLIENT_ID = "op://veselabs/tailscale oauth credentials/username";
                 TAILSCALE_OAUTH_CLIENT_SECRET = "op://veselabs/tailscale oauth credentials/credential";
+                TF_VAR_op_service_account_token = "op://veselabs/service account auth token/credential";
               };
 
               languages = {
