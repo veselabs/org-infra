@@ -35,11 +35,13 @@
           modules = [
             {
               env = {
-                AWS_ACCESS_KEY_ID = "op://veselabs/AWS Root Access Key/username";
-                AWS_SECRET_ACCESS_KEY = "op://veselabs/AWS Root Access Key/credential";
-                GITHUB_APP_ID = "op://veselabs/GitHub App Organization/id";
-                GITHUB_APP_INSTALLATION_ID = "op://veselabs/GitHub App Organization/installation_id";
-                GITHUB_APP_PEM_FILE = "op://veselabs/GitHub App Private Key/private key";
+                AWS_ACCESS_KEY_ID = "op://veselabs/aws root access key/username";
+                AWS_SECRET_ACCESS_KEY = "op://veselabs/aws root access key/credential";
+                GITHUB_APP_ID = "op://veselabs/github app organization/id";
+                GITHUB_APP_INSTALLATION_ID = "op://veselabs/github app organization/installation_id";
+                GITHUB_APP_PEM_FILE = "op://veselabs/github app private key/private key";
+                TAILSCALE_OAUTH_CLIENT_ID = "op://veselabs/tailscale oauth credentials/username";
+                TAILSCALE_OAUTH_CLIENT_SECRET = "op://veselabs/tailscale oauth credentials/credential";
               };
 
               languages = {

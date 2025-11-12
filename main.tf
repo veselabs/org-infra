@@ -30,3 +30,17 @@ module "github_repositories" {
   has_issues     = try(each.value.has_issues, false)
   environments   = try(each.value.environments, [])
 }
+
+resource "tailscale_tailnet_settings" "settings" {
+  acls_external_link                          = null
+  acls_externally_managed_on                  = false
+  devices_approval_on                         = true
+  devices_auto_updates_on                     = false
+  devices_key_duration_days                   = 180
+  https_enabled                               = true
+  network_flow_logging_on                     = false
+  posture_identity_collection_on              = false
+  regional_routing_on                         = false
+  users_approval_on                           = true
+  users_role_allowed_to_join_external_tailnet = "admin"
+}
