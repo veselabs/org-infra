@@ -1,5 +1,5 @@
 {
-  description = "organization-infrastructure";
+  description = "org-infra";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";

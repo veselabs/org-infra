@@ -1,4 +1,4 @@
-# organization-infrastructure
+# org-infra
 
 <!-- prettier-ignore-start -->
 <!-- BEGIN_TF_DOCS -->
