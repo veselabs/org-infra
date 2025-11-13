@@ -22,7 +22,7 @@ module "github_repositories" {
   environments   = try(each.value.environments, [])
 }
 
-resource "tailscale_tailnet_settings" "settings" {
+resource "tailscale_tailnet_settings" "tailnet_settings" {
   acls_external_link                          = null
   acls_externally_managed_on                  = false
   devices_approval_on                         = true

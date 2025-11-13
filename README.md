@@ -29,7 +29,7 @@
 | Name | Type |
 |------|------|
 | [github_membership.veselyn](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/membership) | resource |
-| [tailscale_tailnet_settings.settings](https://registry.terraform.io/providers/tailscale/tailscale/0.24.0/docs/resources/tailnet_settings) | resource |
+| [tailscale_tailnet_settings.tailnet_settings](https://registry.terraform.io/providers/tailscale/tailscale/0.24.0/docs/resources/tailnet_settings) | resource |
 
 ## Inputs
 
