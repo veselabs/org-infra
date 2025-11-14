@@ -46,9 +46,9 @@ resource "tailscale_acl" "acl" {
       // },
 
       // Define the tags which can be applied to devices and by which users.
-      // "tagOwners": {
-      //  	"tag:example": ["autogroup:admin"],
-      // },
+      "tagOwners": {
+        "tag:homelab-pve": ["autogroup:admin"],
+      },
 
       // Define access control lists for users, groups, autogroups, tags,
       // Tailscale IP addresses, and subnet ranges.
