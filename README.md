@@ -22,7 +22,7 @@
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_github_repositories"></a> [github\_repositories](#module\_github\_repositories) | ./modules/github-repository | n/a |
+| <a name="module_github_repository"></a> [github\_repository](#module\_github\_repository) | ./modules/github-repository | n/a |
 
 ## Resources
 

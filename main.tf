@@ -3,7 +3,7 @@ resource "github_membership" "veselyn" {
   role     = "admin"
 }
 
-module "github_repositories" {
+module "github_repository" {
   source = "./modules/github-repository"
 
   for_each = {
