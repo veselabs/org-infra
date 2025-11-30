@@ -95,7 +95,10 @@ resource "tailscale_dns_configuration" "dns_configuration" {
   magic_dns          = true
   override_local_dns = true
 
-  search_paths = []
+  search_paths = [
+    "homelab.veselabs.com",
+    "veselabs.com",
+  ]
 
   nameservers {
     address            = "2a07:a8c1::17:259e"
