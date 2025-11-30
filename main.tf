@@ -90,3 +90,15 @@ resource "tailscale_acl" "acl" {
     }
   EOT
 }
+
+resource "tailscale_dns_configuration" "dns_configuration" {
+  magic_dns          = true
+  override_local_dns = true
+
+  search_paths = []
+
+  nameservers {
+    address            = "2a07:a8c1::17:259e"
+    use_with_exit_node = false
+  }
+}
