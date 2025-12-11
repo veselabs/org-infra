@@ -7,11 +7,12 @@ module "github_repository" {
   source = "./modules/github-repository"
 
   for_each = {
-    bootstrap-infra = {}
-    homelab-infra   = {}
-    issues          = { has_issues = true }
-    issues-private  = { has_issues = true, visibility = "private" }
-    org-infra       = {}
+    bootstrap-infra  = {}
+    homelab-infra    = {}
+    homelab-platform = {}
+    issues           = { has_issues = true }
+    issues-private   = { has_issues = true, visibility = "private" }
+    org-infra        = {}
   }
 
   name           = each.key
