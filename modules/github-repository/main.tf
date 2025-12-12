@@ -46,6 +46,12 @@ resource "github_repository_ruleset" "this" {
     bypass_mode = "pull_request"
   }
 
+  bypass_actors {
+    actor_id    = 0
+    actor_type  = "DeployKey"
+    bypass_mode = "exempt"
+  }
+
   rules {
     merge_queue {
       merge_method = "SQUASH"
@@ -82,4 +88,25 @@ resource "github_repository_environment" "this" {
     protected_branches     = true
     custom_branch_policies = false
   }
+}
+
+resource "tls_private_key" "deploy_key" {
+  count     = var.deploy_key ? 1 : 0
+  algorithm = "ED25519"
+}
+
+resource "onepassword_item" "deploy_key" {
+  count    = var.deploy_key ? 1 : 0
+  vault    = var.op_vault
+  title    = "${var.name} Deploy key"
+  username = tls_private_key.deploy_key[count.index].public_key_openssh
+  password = tls_private_key.deploy_key[count.index].private_key_openssh
+}
+
+resource "github_repository_deploy_key" "this" {
+  count      = var.deploy_key ? 1 : 0
+  title      = "Deploy key"
+  repository = var.name
+  key        = tls_private_key.deploy_key[count.index].public_key_openssh
+  read_only  = false
 }

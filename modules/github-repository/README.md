@@ -5,13 +5,16 @@
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.12 |
-| <a name="requirement_github"></a> [github](#requirement\_github) | ~> 6.0 |
+| <a name="requirement_github"></a> [github](#requirement\_github) | 6.9.0 |
+| <a name="requirement_onepassword"></a> [onepassword](#requirement\_onepassword) | 2.2.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_github"></a> [github](#provider\_github) | ~> 6.0 |
+| <a name="provider_github"></a> [github](#provider\_github) | 6.9.0 |
+| <a name="provider_onepassword"></a> [onepassword](#provider\_onepassword) | 2.2.0 |
+| <a name="provider_tls"></a> [tls](#provider\_tls) | n/a |
 
 ## Modules
 
@@ -21,11 +24,14 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [github_branch_default.this](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/branch_default) | resource |
-| [github_repository.this](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository) | resource |
-| [github_repository_environment.this](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository_environment) | resource |
-| [github_repository_ruleset.this](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository_ruleset) | resource |
-| [github_user.veselyn](https://registry.terraform.io/providers/integrations/github/latest/docs/data-sources/user) | data source |
+| [github_branch_default.this](https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/branch_default) | resource |
+| [github_repository.this](https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/repository) | resource |
+| [github_repository_deploy_key.this](https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/repository_deploy_key) | resource |
+| [github_repository_environment.this](https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/repository_environment) | resource |
+| [github_repository_ruleset.this](https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/repository_ruleset) | resource |
+| [onepassword_item.deploy_key](https://registry.terraform.io/providers/1Password/onepassword/2.2.0/docs/resources/item) | resource |
+| [tls_private_key.deploy_key](https://registry.terraform.io/providers/hashicorp/tls/latest/docs/resources/private_key) | resource |
+| [github_user.veselyn](https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/user) | data source |
 
 ## Inputs
 
@@ -33,9 +39,11 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_archived"></a> [archived](#input\_archived) | Whether the repository is archived | `bool` | `false` | no |
 | <a name="input_default_branch"></a> [default\_branch](#input\_default\_branch) | Default branch to use for the repository | `string` | n/a | yes |
+| <a name="input_deploy_key"></a> [deploy\_key](#input\_deploy\_key) | Whether to create a deploy key | `bool` | `false` | no |
 | <a name="input_environments"></a> [environments](#input\_environments) | Environments for which to require reviews | `set(string)` | `[]` | no |
 | <a name="input_has_issues"></a> [has\_issues](#input\_has\_issues) | Whether to enable the Issues feature | `bool` | `false` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name of the repository | `string` | n/a | yes |
+| <a name="input_op_vault"></a> [op\_vault](#input\_op\_vault) | n/a | `string` | n/a | yes |
 | <a name="input_visibility"></a> [visibility](#input\_visibility) | Visibility of the repository | `string` | `"public"` | no |
 
 ## Outputs
