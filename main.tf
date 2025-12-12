@@ -9,7 +9,7 @@ module "github_repository" {
   for_each = {
     bootstrap-infra  = {}
     homelab-infra    = {}
-    homelab-platform = {}
+    homelab-platform = { deploy_key = true }
     issues           = { has_issues = true }
     issues-private   = { has_issues = true, visibility = "private" }
     org-infra        = {}
@@ -21,6 +21,8 @@ module "github_repository" {
   default_branch = local.default_branch
   has_issues     = try(each.value.has_issues, false)
   environments   = try(each.value.environments, [])
+  deploy_key     = try(each.value.deploy_key, false)
+  op_vault       = var.op_vault
 }
 
 resource "tailscale_tailnet_settings" "tailnet_settings" {

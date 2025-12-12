@@ -31,3 +31,13 @@ variable "environments" {
   description = "Environments for which to require reviews"
   default     = []
 }
+
+variable "deploy_key" {
+  type        = bool
+  description = "Whether to create a deploy key"
+  default     = false
+}
+
+variable "op_vault" {
+  type = string
+}
