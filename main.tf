@@ -7,7 +7,7 @@ module "github_repository" {
   source = "./modules/github-repository"
 
   for_each = {
-    bootstrap-infra  = {}
+    bootstrap-infra  = { description = "Infrastructure to store Terraform state files" }
     homelab-infra    = {}
     homelab-platform = { deploy_key = true }
     issues           = { has_issues = true }
