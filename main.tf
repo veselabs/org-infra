@@ -7,6 +7,7 @@ module "github_repository" {
   source = "./modules/github-repository"
 
   for_each = {
+    ".github"        = {}
     bootstrap-infra  = {}
     homelab-infra    = {}
     homelab-platform = { deploy_key = true }
