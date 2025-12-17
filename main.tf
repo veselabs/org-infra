@@ -16,6 +16,7 @@ module "github_repository" {
   }
 
   name           = each.key
+  description    = try(each.value.description, "")
   visibility     = try(each.value.visibility, "public")
   archived       = try(each.value.archived, false)
   default_branch = local.default_branch
