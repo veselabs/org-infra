@@ -4,6 +4,7 @@ data "github_user" "veselyn" {
 
 resource "github_repository" "this" {
   name               = var.name
+  description        = var.description
   visibility         = var.visibility
   archived           = var.archived
   archive_on_destroy = true

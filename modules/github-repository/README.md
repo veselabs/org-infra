@@ -40,6 +40,7 @@ No modules.
 | <a name="input_archived"></a> [archived](#input\_archived) | Whether the repository is archived | `bool` | `false` | no |
 | <a name="input_default_branch"></a> [default\_branch](#input\_default\_branch) | Default branch to use for the repository | `string` | n/a | yes |
 | <a name="input_deploy_key"></a> [deploy\_key](#input\_deploy\_key) | Whether to create a deploy key | `bool` | `false` | no |
+| <a name="input_description"></a> [description](#input\_description) | Description of the repository | `string` | n/a | yes |
 | <a name="input_environments"></a> [environments](#input\_environments) | Environments for which to require reviews | `set(string)` | `[]` | no |
 | <a name="input_has_issues"></a> [has\_issues](#input\_has\_issues) | Whether to enable the Issues feature | `bool` | `false` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name of the repository | `string` | n/a | yes |
