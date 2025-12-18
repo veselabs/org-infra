@@ -29,6 +29,7 @@
 | Name | Type |
 |------|------|
 | [github_membership.veselyn](https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/membership) | resource |
+| [github_organization_settings.settings](https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_settings) | resource |
 | [tailscale_acl.acl](https://registry.terraform.io/providers/tailscale/tailscale/0.24.0/docs/resources/acl) | resource |
 | [tailscale_dns_configuration.dns_configuration](https://registry.terraform.io/providers/tailscale/tailscale/0.24.0/docs/resources/dns_configuration) | resource |
 | [tailscale_tailnet_settings.tailnet_settings](https://registry.terraform.io/providers/tailscale/tailscale/0.24.0/docs/resources/tailnet_settings) | resource |
