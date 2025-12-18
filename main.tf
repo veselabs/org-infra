@@ -8,12 +8,12 @@ module "github_repository" {
 
   for_each = {
     ".github"        = {}
-    bootstrap-infra  = {}
-    homelab-infra    = {}
-    homelab-platform = { deploy_key = true }
+    bootstrap-infra  = { description = "Bootstrap infrastructure for foundational prerequisites" }
+    homelab-infra    = { description = "Homelab infrastructure for Kubernetes on Proxmox using Terraform, Packer, and Ansible" }
+    homelab-platform = { description = "Homelab platform for Kubernetes using FluxCD for GitOps deployment", deploy_key = true }
     issues           = { has_issues = true }
     issues-private   = { has_issues = true, visibility = "private" }
-    org-infra        = {}
+    org-infra        = { description = "Organization infrastructure for GitHub resources and Tailscale networking" }
   }
 
   name           = each.key
