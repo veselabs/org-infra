@@ -3,6 +3,11 @@ resource "github_membership" "veselyn" {
   role     = "admin"
 }
 
+resource "github_organization_settings" "settings" {
+  billing_email = "bot@veselabs.com"
+  description   = "Infrastructure from on-premise to cloud using DevOps practices"
+}
+
 module "github_repository" {
   source = "./modules/github-repository"
 
