@@ -76,6 +76,7 @@
                 treefmt.enable = true;
                 treefmt.package = self'.formatter;
                 trim-trailing-whitespace.enable = true;
+                yamllint.enable = true;
               };
             }
           ];
