@@ -30,6 +30,9 @@ provider "registry.terraform.io/1password/onepassword" {
 provider "registry.terraform.io/hashicorp/tls" {
   version = "4.1.0"
   hashes = [
+    "h1:Ka8mEwRFXBabR33iN/WTIEW6RP0z13vFsDlwn11Pf2I=",
+    "h1:UklaKJOCynnEJbpCVN0zJKIJ3SvO7RQJ00/6grBatnw=",
+    "h1:uDtqTpFJOseNUlPDx4TT/lXf6ie3CarsimL7sYCiVH4=",
     "h1:zEv9tY1KR5vaLSyp2lkrucNJ+Vq3c+sTFK9GyQGLtFs=",
     "zh:14c35d89307988c835a7f8e26f1b83ce771e5f9b41e407f86a644c0152089ac2",
     "zh:2fb9fe7a8b5afdbd3e903acb6776ef1be3f2e587fb236a8c60f11a9fa165faa8",
@@ -50,7 +53,10 @@ provider "registry.terraform.io/integrations/github" {
   version     = "6.9.0"
   constraints = "6.9.0"
   hashes = [
+    "h1:IgkP3rlzxLFmnZBr+ua7nPMWJ0ocFbuGzQPlcBg7GcU=",
     "h1:TZh2ryQYxXFTLW6861U0GWmDQllwWwKGlmVlJ4H80Xs=",
+    "h1:dEM5mAP3EioVxCIFJ1JYBgmHmSLEMUwnozqJe3einUQ=",
+    "h1:tVDCbv/t67pHiRWs7CeASyM1of322tCiXD7FH3t22w8=",
     "zh:0136ce1ca9e438c6af2d2c46a415d9288616597ff7ef943f7b67f352917d2e0a",
     "zh:0e46a1ff95096fdb2f40c6fcb172ba64a2002c9ce8edab8057f66f192a928be0",
     "zh:222a4489f4188532643e3341413b9c44b1383d5c722ec45b6f21266a4c4ba2aa",
