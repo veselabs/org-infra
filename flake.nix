@@ -35,8 +35,9 @@
           modules = [
             {
               env = {
-                AWS_ACCESS_KEY_ID = "op://veselabs/aws root access key/username";
-                AWS_SECRET_ACCESS_KEY = "op://veselabs/aws root access key/credential";
+                CLOUDFLARE_ACCESS_KEY_ID = "op://veselabs/cloudflare api token/access_key_id";
+                CLOUDFLARE_ACCOUNT_ID = "op://veselabs/cloudflare api token/account_id";
+                CLOUDFLARE_SECRET_ACCESS_KEY = "op://veselabs/cloudflare api token/secret_access_key";
                 GITHUB_APP_ID = "op://veselabs/github app organization/id";
                 GITHUB_APP_INSTALLATION_ID = "op://veselabs/github app organization/installation_id";
                 GITHUB_APP_PEM_FILE = "op://veselabs/github app private key/private key";
@@ -56,7 +57,7 @@
                 ++ builtins.attrValues {
                   inherit
                     (pkgs)
-                    awscli2
+                    envsubst
                     just
                     terraform-docs
                     ;
