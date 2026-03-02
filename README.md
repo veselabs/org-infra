@@ -1,5 +1,9 @@
 # org-infra
 
+This project provides a Terraform configuration for managing the GitHub
+organization, the Tailscale network (tailnet), and various other organizational
+resources.
+
 <!-- prettier-ignore-start -->
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
