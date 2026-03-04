@@ -57,6 +57,7 @@
                 ++ builtins.attrValues {
                   inherit
                     (pkgs)
+                    _1password-cli
                     envsubst
                     just
                     pre-commit
