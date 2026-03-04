@@ -59,6 +59,7 @@
                     (pkgs)
                     envsubst
                     just
+                    pre-commit
                     terraform-docs
                     ;
                 };
