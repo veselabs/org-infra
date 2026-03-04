@@ -10,6 +10,7 @@
 | <a name="requirement_github"></a> [github](#requirement\_github) | 6.9.0 |
 | <a name="requirement_onepassword"></a> [onepassword](#requirement\_onepassword) | 2.2.0 |
 | <a name="requirement_tailscale"></a> [tailscale](#requirement\_tailscale) | 0.24.0 |
+| <a name="requirement_tls"></a> [tls](#requirement\_tls) | 4.2.1 |
 
 ## Providers
 
