@@ -7,6 +7,7 @@
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.12 |
 | <a name="requirement_github"></a> [github](#requirement\_github) | 6.9.0 |
 | <a name="requirement_onepassword"></a> [onepassword](#requirement\_onepassword) | 2.2.0 |
+| <a name="requirement_tls"></a> [tls](#requirement\_tls) | 4.2.1 |
 
 ## Providers
 
@@ -14,7 +15,7 @@
 |------|---------|
 | <a name="provider_github"></a> [github](#provider\_github) | 6.9.0 |
 | <a name="provider_onepassword"></a> [onepassword](#provider\_onepassword) | 2.2.0 |
-| <a name="provider_tls"></a> [tls](#provider\_tls) | n/a |
+| <a name="provider_tls"></a> [tls](#provider\_tls) | 4.2.1 |
 
 ## Modules
 
@@ -30,7 +31,7 @@ No modules.
 | [github_repository_environment.this](https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/repository_environment) | resource |
 | [github_repository_ruleset.this](https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/repository_ruleset) | resource |
 | [onepassword_item.deploy_key](https://registry.terraform.io/providers/1Password/onepassword/2.2.0/docs/resources/item) | resource |
-| [tls_private_key.deploy_key](https://registry.terraform.io/providers/hashicorp/tls/latest/docs/resources/private_key) | resource |
+| [tls_private_key.deploy_key](https://registry.terraform.io/providers/hashicorp/tls/4.2.1/docs/resources/private_key) | resource |
 | [github_user.veselyn](https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/user) | data source |
 
 ## Inputs
