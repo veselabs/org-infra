@@ -10,6 +10,7 @@ resource "github_repository" "this" {
   archive_on_destroy = true
   auto_init          = true
 
+  allow_auto_merge       = true
   delete_branch_on_merge = true
   allow_update_branch    = true
 
